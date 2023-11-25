@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "FlowerDelivery",
-    "slug": "FlowerDelivery",
+    "slug": "flowerdelivery",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ciliaen.flowerdelivery"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ciliaen.flowerdelivery"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b552fef6-6130-4a7b-ba49-552191ae70ea"
+      }
+    },
+    "owner": "ciliaen"
   }
 }
