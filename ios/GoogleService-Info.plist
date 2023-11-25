@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDQdD4p-imCndpukO-MH9DMSSYVdYOEmzM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>53317929221</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ciliaen.flowerdelivery</string>
+	<key>PROJECT_ID</key>
+	<string>flower-6d37f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flower-6d37f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:53317929221:ios:aa6fdff198f3fe9ab78f6c</string>
+</dict>
+</plist>
