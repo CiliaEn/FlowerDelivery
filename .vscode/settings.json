@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "typescript.format.enable": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "java.configuration.updateBuildConfiguration": "interactive"
+  }
