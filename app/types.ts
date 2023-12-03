@@ -2,8 +2,7 @@ export type User = {
   name: String;
   phoneNumber: String;
   email: String;
-  orders: [Order];
-  //activeOrder : Order
+  orders: Order[];
 };
 
 export type Order = {
@@ -17,7 +16,7 @@ export type Store = {
   deliveryFee: number;
   deliveryTime: String;
   image: String;
-  bouquets: [Bouquet];
+  bouquets: Bouquet[];
   latitude: number;
   longitude: number;
   score: String;

@@ -12,7 +12,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		5586BEF1E39346BC95EF5AAD /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9192EF86548729733D39E /* noop-file.swift */; };
-		74718B982B124E7D00042E50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74718B972B124E7D00042E50 /* GoogleService-Info.plist */; };
 		74718B9B2B124F1F00042E50 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 74718B9A2B124F1F00042E50 /* FirebaseAuth */; };
 		74718B9D2B124F1F00042E50 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 74718B9C2B124F1F00042E50 /* FirebaseAuthCombine-Community */; };
 		74718B9F2B124F1F00042E50 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 74718B9E2B124F1F00042E50 /* FirebaseDatabase */; };
@@ -40,7 +39,6 @@
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-FlowerDelivery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlowerDelivery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67148B11494A48ECB4F0172B /* FlowerDelivery-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "FlowerDelivery-Bridging-Header.h"; path = "FlowerDelivery/FlowerDelivery-Bridging-Header.h"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-FlowerDelivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerDelivery.debug.xcconfig"; path = "Target Support Files/Pods-FlowerDelivery/Pods-FlowerDelivery.debug.xcconfig"; sourceTree = "<group>"; };
-		74718B972B124E7D00042E50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-FlowerDelivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerDelivery.release.xcconfig"; path = "Target Support Files/Pods-FlowerDelivery/Pods-FlowerDelivery.release.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = FlowerDelivery/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 		13B07FAE1A68108700A75B9A /* FlowerDelivery */ = {
 			isa = PBXGroup;
 			children = (
-				74718B972B124E7D00042E50 /* GoogleService-Info.plist */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
@@ -243,7 +240,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
-				74718B982B124E7D00042E50 /* GoogleService-Info.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
 			);
@@ -506,10 +502,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
@@ -569,10 +562,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

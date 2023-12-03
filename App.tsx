@@ -1,14 +1,26 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Ionicons, Octicons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import Home from "./app/screens/Home";
 import Profile from "./app/screens/Profile";
 import Search from "./app/screens/Search";
+import { useEffect } from "react";
+import { fetchStoresData } from "./app/firebase/firebaseManager";
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+  useEffect(() => {
+    const fetchStoresAndLogNames = async () => {
+      const stores = await fetchStoresData();
+      stores.forEach((store) => {
+        console.log(store.name);
+      });
+    };
+    fetchStoresAndLogNames();
+  }, []);
+
   return (
     <NavigationContainer>
       <Tab.Navigator

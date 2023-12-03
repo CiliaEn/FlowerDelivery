@@ -1,0 +1,136 @@
+import { Store } from "../types";
+
+const mockStores: Store[] = [
+  {
+    name: "Flower Power",
+    deliveryFee: 5,
+    deliveryTime: "1-2 days",
+    image: "",
+    bouquets: [
+      { name: "Red Roses", price: 20, imageUrl: "" },
+      { name: "Lilies Bouquet", price: 25, imageUrl: "" },
+    ],
+    latitude: 59.3293,
+    longitude: 18.0686,
+    score: "4.5",
+  },
+  {
+    name: "Petals & Posies",
+    deliveryFee: 6,
+    deliveryTime: "2-3 days",
+    image: "",
+    bouquets: [
+      { name: "Orchids", price: 25, imageUrl: "" },
+      { name: "Daisies", price: 12, imageUrl: "" },
+    ],
+    latitude: 59.3293,
+    longitude: 18.0686,
+    score: "4.8",
+  },
+  {
+    name: "Bloom & Blossom",
+    deliveryFee: 7,
+    deliveryTime: "2-4 days",
+    image: "",
+    bouquets: [
+      { name: "Tulips", price: 18, imageUrl: "" },
+      { name: "Carnations", price: 15, imageUrl: "" },
+    ],
+    latitude: 59.3293,
+    longitude: 18.0686,
+    score: "4.2",
+  },
+  {
+    name: "Nordic Flora",
+    deliveryFee: 4,
+    deliveryTime: "1-3 days",
+    image: "",
+    bouquets: [
+      { name: "Peonies", price: 22, imageUrl: "" },
+      { name: "Hyacinths", price: 19, imageUrl: "" },
+    ],
+    latitude: 59.3293,
+    longitude: 18.0686,
+    score: "4.6",
+  },
+  {
+    name: "Blossoming Gardens",
+    deliveryFee: 5,
+    deliveryTime: "1-2 days",
+    image: "",
+    bouquets: [
+      { name: "Sunflowers", price: 17, imageUrl: "" },
+      { name: "Ranunculus", price: 21, imageUrl: "" },
+    ],
+    latitude: 59.3293,
+    longitude: 18.0686,
+    score: "4.3",
+  },
+  {
+    name: "Floral Delights",
+    deliveryFee: 6,
+    deliveryTime: "2-3 days",
+    image: "",
+    bouquets: [
+      { name: "Irises", price: 20, imageUrl: "" },
+      { name: "Anemones", price: 18, imageUrl: "" },
+    ],
+    latitude: 59.3293,
+    longitude: 18.0686,
+    score: "4.7",
+  },
+  {
+    name: "Rosy Dreams",
+    deliveryFee: 5,
+    deliveryTime: "1-2 days",
+    image: "",
+    bouquets: [
+      { name: "Gerberas", price: 16, imageUrl: "" },
+      { name: "Camellias", price: 23, imageUrl: "" },
+    ],
+    latitude: 59.3293,
+    longitude: 18.0686,
+    score: "4.4",
+  },
+  {
+    name: "Springtime Florist",
+    deliveryFee: 6,
+    deliveryTime: "2-3 days",
+    image: "",
+    bouquets: [
+      { name: "Daffodils", price: 14, imageUrl: "" },
+      { name: "Chrysanthemums", price: 20, imageUrl: "" },
+    ],
+    latitude: 59.3293,
+    longitude: 18.0686,
+    score: "4.5",
+  },
+  {
+    name: "Blooming Buds",
+    deliveryFee: 5,
+    deliveryTime: "1-2 days",
+    image: "",
+    bouquets: [
+      { name: "Zinnias", price: 19, imageUrl: "" },
+      { name: "Asters", price: 16, imageUrl: "" },
+    ],
+    latitude: 59.3293,
+    longitude: 18.0686,
+    score: "4.6",
+  },
+  {
+    name: "Fragrant Petals",
+    deliveryFee: 7,
+    deliveryTime: "2-4 days",
+    image: "",
+    bouquets: [
+      { name: "Freesias", price: 23, imageUrl: "" },
+      { name: "Begonias", price: 18, imageUrl: "" },
+    ],
+    latitude: 59.3293,
+    longitude: 18.0686,
+    score: "4.3",
+  },
+];
+
+export default mockStores;
