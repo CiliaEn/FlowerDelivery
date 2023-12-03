@@ -11,6 +11,7 @@ import { fetchStoresData } from "./app/firebase/firebaseManager";
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+  
   useEffect(() => {
     const fetchStoresAndLogNames = async () => {
       const stores = await fetchStoresData();
