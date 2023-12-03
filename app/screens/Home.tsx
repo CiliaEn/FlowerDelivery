@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, FlatList } from "react-native";
 import ListItem from "../components/listItem";
 import { fetchStoresData } from "../firebase/firebaseManager";
 
@@ -20,12 +20,18 @@ export default function Home() {
   }, []);
 
   return (
-    <View style={{ flex: 1 }}>
-      <ScrollView>
-        {stores.map((store, index) => (
-          <ListItem key={index} store={store}></ListItem>
-        ))}
-      </ScrollView>
+    <View
+      style={{
+        flex: 1,
+        padding: 10,
+        backgroundColor: "#fff",
+      }}
+    >
+      <FlatList
+        data={stores}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={({ item }) => <ListItem store={item} />}
+      />
     </View>
   );
 }
