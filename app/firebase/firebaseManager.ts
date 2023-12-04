@@ -9,17 +9,10 @@ import {
 import { Store } from "../types";
 import mockStores from "../mockData/mockStores";
 import { firebaseConfig } from "./firebaseConfig";
-import { getAuth } from "firebase/auth";
-import { initializeAuth, getReactNativePersistence } from "firebase/auth";
-import ReactNativeAsyncStorage from "@react-native-async-storage/async-storage";
 
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
-
-const auth = initializeAuth(app, {
-  persistence: getReactNativePersistence(ReactNativeAsyncStorage),
-});
 
 const fetchStoresData = async (): Promise<Store[]> => {
   const storesData: Store[] = [];
@@ -62,4 +55,4 @@ const addStoresToFirestore = async () => {
   }
 };
 
-export { db, auth, fetchStoresData, addStoresToFirestore };
+export { db, app, fetchStoresData, addStoresToFirestore };

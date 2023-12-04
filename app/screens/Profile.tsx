@@ -1,40 +1,24 @@
 import React from "react";
 import { View, Text, TextInput, Button } from "react-native";
-import { auth } from "../firebase/firebaseManager";
-import {
-  signInWithEmailAndPassword,
-  createUserWithEmailAndPassword,
-} from "firebase/auth";
+import { handleSignIn, handleSignUp } from "../firebase/authManager";
 
 export default function Profile() {
-  // States for email, password, and error messages
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [error, setError] = React.useState("");
 
-  // Function to handle sign in
-  const handleSignIn = async () => {
-    try {
-      await signInWithEmailAndPassword(auth, email, password);
-      // Handle successful sign in (navigate to another screen, etc.)
-    } catch (err) {
-      setError(err.message);
-    }
+  const onPressSignIn = async () => {
+    const err = await handleSignIn(email, password); // Await the function call
+    setError(err); // Set error state
   };
 
-  // Function to handle sign up
-  const handleSignUp = async () => {
-    try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      // Handle successful sign up (navigate to another screen, etc.)
-    } catch (err) {
-      setError(err.message);
-    }
+  const onPressSignUp = async () => {
+    const err = await handleSignUp(email, password); // Await the function call
+    setError(err); // Set error state
   };
 
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Profile</Text>
       <TextInput
         placeholder="Email"
         value={email}
@@ -48,8 +32,8 @@ export default function Profile() {
         onChangeText={(text) => setPassword(text)}
         style={{ borderWidth: 1, width: 200, marginVertical: 10, padding: 8 }}
       />
-      <Button title="Sign In" onPress={handleSignIn} />
-      <Button title="Sign Up" onPress={handleSignUp} />
+      <Button title="Sign In" onPress={onPressSignIn} />
+      <Button title="Sign Up" onPress={onPressSignUp} />
       {error ? (
         <Text style={{ color: "red", marginTop: 10 }}>{error}</Text>
       ) : null}
