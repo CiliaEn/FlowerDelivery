@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, ScrollView, FlatList } from "react-native";
+import { View, FlatList } from "react-native";
 import ListItem from "../components/listItem";
 import { fetchStoresData } from "../firebase/firebaseManager";
 
@@ -15,7 +15,6 @@ export default function Home() {
         console.error("Error fetching stores:", error);
       }
     };
-
     getStores();
   }, []);
 
